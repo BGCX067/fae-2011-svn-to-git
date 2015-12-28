@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.ActivityDiagramText</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>469</w>
+      <h>557</h>
+    </coordinates>
+    <panel_attributes>title:Gesamtsitzung
+Start
+Anmelden
+If 
+	[beenden]
+
+	While[Aktion ausführen]
+		Aktion..
+	[beenden]
+EndIf
+Abmelden
+End</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>490</x>
+      <y>30</y>
+      <w>140</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Sitzung erläutern
+Bedingung beschreiben
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>7</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>539</x>
+      <y>329</y>
+      <w>308</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Ausführungsregel
+--
+-zuordnungsTabelle: Hashmap&lt;EnergieVerbraucher, Aktion&gt;
+--
++ausfuehren()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>427</x>
+      <y>777</y>
+      <w>259</w>
+      <h>175</h>
+    </coordinates>
+    <panel_attributes>/elektr./
+/Energieverbraucher/
+--
+-id: int
+-typ: Typ
+-leistung: float
+-spannung: int
+-verbrauch: float
+-normwert: float
+--
++meldeHohenStromverbrauch()
++registrieren()
++anzeigeAktuellenVerbrauch()
++vergleicheEV(e: EnergieVerbraucher): int
++vergleicheEVG(e: Energieverbrauchergruppe): int
++berechneKosten()
++getResourceID(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>574</x>
+      <y>539</y>
+      <w>147</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>/Energieverbraucher/
+--
+-name: String
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>490</x>
+      <y>364</y>
+      <w>97</w>
+      <h>209</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*</panel_attributes>
+    <additional_attributes>49;21;21;21;21;70;70;70;70;196;84;196</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>700</x>
+      <y>777</y>
+      <w>168</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Heizkörper
+--
+-standort: String
+-heizstufe: Heizstufe
+--
++registrieren()
++ermittleHeizungsdaten()
++speichereHeizungsdaten()
++aendereHeizstufe(h: Heizstufe)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>623</x>
+      <y>553</y>
+      <w>188</w>
+      <h>237</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;77;175;77;175;224</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>511</x>
+      <y>553</y>
+      <w>146</w>
+      <h>237</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>133;21;133;77;21;77;21;224</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>294</x>
+      <y>1029</y>
+      <w>182</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>dimmbarer 
+elektr. Energieverbraucher
+--
+-status: float
+--
++aendereStatus(status: float)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>588</x>
+      <y>1029</y>
+      <w>175</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>nicht dimmbarer 
+elektr. Energieverbraucher
+--
+-status: int
+--
++aendereStatus(status: int)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>364</x>
+      <y>931</y>
+      <w>182</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>175;21;175;63;21;63;21;98</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>518</x>
+      <y>931</y>
+      <w>167</w>
+      <h>111</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;63;154;63;154;98</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1183</x>
+      <y>280</y>
+      <w>224</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Benutzer
+--
+-name: String
+-passwort: String
+-email: String
+-handyNummer: String
+-rolle: Rolle
+-regeln: List&lt;Benachrichtigungsregel&gt;
+--
++aendereRolle(neueRolle: Rolle)
++sendeEmailBenachrichtigung(nachricht: String)
++sendeSMSBenachrichtigung(nachricht: String)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>154</x>
+      <y>784</y>
+      <w>203</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Tarif
+--
+-nameDesEnergieversorgers: String
+-tarifname: String
+-preisDaten: Hashmap&lt;Integer, Float&gt;
+--
++berechneKosten()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>910</x>
+      <y>637</y>
+      <w>168</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>Temperatursensor
+--
+-raumTemperatur: float
+-heizkoerper: List&lt;Heizkoerper&gt;
+--
++ermittleHeizungsdaten()
++speichereHeizungsdaten()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>98</x>
+      <y>658</y>
+      <w>259</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>elektr.
+Energieverbrauchergruppe
+--
+-name: String
+-elektrEV: List&lt;elektr.Energieverbraucher&gt;
+--
++vergleicheEV(e: EnergieVerbraucher): int
++vergleicheEVG(e: Energieverbrauchergruppe): int
++aendereStatus(status: float)
++berechneKosten()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>805</x>
+      <y>147</y>
+      <w>133</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>/Regel/
+--
+-name: String
+-bedingung: List&lt;String&gt;
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>896</x>
+      <y>308</y>
+      <w>154</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Benachrichtigungsregel
+--
+-kanal: KommunikationsWeg
+-inhalt: String
+--
++sendeBenachrichtigung()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1029</x>
+      <y>336</y>
+      <w>167</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=1</panel_attributes>
+    <additional_attributes>21;21;154;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>707</y>
+      <w>104</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*</panel_attributes>
+    <additional_attributes>21;21;63;21;63;77;91;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>686</y>
+      <w>97</w>
+      <h>118</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1..*
+m2=1</panel_attributes>
+    <additional_attributes>21;105;84;105;84;70;21;70;21;21;63;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>798</y>
+      <w>98</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>21;21;91;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>826</x>
+      <y>364</y>
+      <w>300</w>
+      <h>356</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*</panel_attributes>
+    <additional_attributes>21;21;49;21;287;21;287;343;252;343</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>336</x>
+      <y>343</y>
+      <w>216</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=*</panel_attributes>
+    <additional_attributes>21;357;147;357;147;105;147;21;182;21;203;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>609</x>
+      <y>175</y>
+      <w>272</w>
+      <h>167</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>259;21;259;63;21;63;21;154</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>175</y>
+      <w>132</w>
+      <h>146</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>21;21;21;63;119;63;119;133</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InteractionFrame</type>
+    <coordinates>
+      <x>70</x>
+      <y>84</y>
+      <w>1764</w>
+      <h>1316</h>
+    </coordinates>
+    <panel_attributes>Klassendiagramm mit Methoden</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>770</x>
+      <y>0</y>
+      <w>203</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Aus Grunden der Uebersichtlichkeit
+wurden alle getter und setter, sowohl
+alle add, edit und remove Methoden 
+fuer die Verwaltung der Hashmaps 
+und Lists, ausgelassen.
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1477</x>
+      <y>280</y>
+      <w>147</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Rolle
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1386</x>
+      <y>273</y>
+      <w>104</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>21;21;91;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1183</x>
+      <y>217</y>
+      <w>147</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+KommunikationsWeg
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1029</x>
+      <y>210</y>
+      <w>167</w>
+      <h>139</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>21;126;91;126;91;21;154;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>959</x>
+      <y>798</y>
+      <w>147</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Heizstufe
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>847</x>
+      <y>791</y>
+      <w>125</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>21;21;112;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>0</x>
+      <y>777</y>
+      <w>98</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Fuer preisDaten: 
+Integer ist die 
+Uhrzeit (0..23)
+Float ist der Preis
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>77</x>
+      <y>784</y>
+      <w>84</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;77;49</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1127</x>
+      <y>770</y>
+      <w>252</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>Die zwei Methoden ermittleHeizungsdaten 
+und speichereHeizungsdaten rufen jeweils
+die entsprechenden Methoden aus der
+Heizkoerper-Klasse auf fuer jedes Objekt,
+welches in der heizkoerper-Liste gespeichert ist.
+(z.B. mittels eine Schleife)
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1043</x>
+      <y>714</y>
+      <w>97</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;84;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>385</x>
+      <y>1148</y>
+      <w>224</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>Beim dimmbaren EV wird der Status
+durch eine float dargestellt, wobei
+0: ausgeschaltet
+1: eingeschaltet
+0.1..0.9: gedimmt
+ 
+Beim nicht dimmbaren EV wird der Status
+durch eine int dargestellt, wobei
+0: ausgeschaltet
+1: eingeschaltet
+
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>378</x>
+      <y>1071</y>
+      <w>119</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;112;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>490</x>
+      <y>1071</y>
+      <w>188</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>175;21;21;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>756</x>
+      <y>889</y>
+      <w>147</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Enumeration&gt;&gt;
+Typ
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>665</x>
+      <y>882</y>
+      <w>104</w>
+      <h>34</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1</panel_attributes>
+    <additional_attributes>21;21;91;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>126</x>
+      <y>483</y>
+      <w>259</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Die Methode berechneKosten ruft die Methode
+berechneKosten von jedem Objekt auf, welches in 
+der elektrEV-Liste gespeichert ist, und summiert
+alle Verbrauchskosten der Gruppe.
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>154</x>
+      <y>518</y>
+      <w>69</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>56;21;21;140</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>70</x>
+      <y>938</y>
+      <w>238</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>Die Methode berechneKosten summiert alle
+Verbrauchskosten aller elektr.Verbraucher.
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>161</x>
+      <y>833</y>
+      <w>63</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;105;56;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1183</x>
+      <y>476</y>
+      <w>224</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Authentifizierung
+--
+-benutzer: List&lt;Benutzer&gt;
+--
++anmelden(name:String,pw:String): Boolean
++abmelden()
++istAngemeldet(name:String): Boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1127</x>
+      <y>637</y>
+      <w>252</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>Die Klasse "Authentifizierung" dient als Hilflsklasse zur 
+Überprüfung der Anmeldedaten eines Benutzers. 
+Nach Eingabe und Absenden der Benutzerdaten durch 
+einen neuen Benutzer wird die Methode anmelden(...)
+aufgerufen, über die geprüft wird, ob ein Benutzer im 
+System registriert ist. Bei Erfolg wird dem Benutzer eine
+neue Rolle (Benutzer o. Admin) zugewiesen und true
+zurückgegeben. Bei Misserfolg behält der Benutzer die
+Rolle "Gast" und es wird false zurückgegeben.
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1155</x>
+      <y>518</y>
+      <w>69</w>
+      <h>132</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>56;21;21;119</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1295</x>
+      <y>399</y>
+      <w>34</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=   *
+m2=   1</panel_attributes>
+    <additional_attributes>21;21;21;77</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1442</x>
+      <y>392</y>
+      <w>245</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Zugriffskontrollliste
+--
++istErlaubt(benutzer:Benutzer,resource:Resource):Boolean
++erlaube(benutzer:Benutzer,resource:Resource)
++verbiete(benutzer:Benutzer,resource:Resource)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1477</x>
+      <y>504</y>
+      <w>147</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+Resource
+--
+getResourceID(): int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1386</x>
+      <y>322</y>
+      <w>181</w>
+      <h>83</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+m2=   1</panel_attributes>
+    <additional_attributes>21;21;168;21;168;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1533</x>
+      <y>427</y>
+      <w>34</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=   *
+m2=   1</panel_attributes>
+    <additional_attributes>21;77;21;21</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1442</x>
+      <y>707</y>
+      <w>245</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>Die Klasse "Zugriffskontrollliste" dient dazu zu prüfen,
+ob ein Benutzer die Berechtigung hat, auf eine 
+Resource (z.B. eine Systemfunktion oder ein Energie-
+erbraucher) zuzugreifen. 
+Der Benutzer erbt die Rechte der Rolle. Diese Rechte
+können jedoch für jeden Benutzer einzeln überschrieben 
+werden.
+Die Art der Speicherung der Zuordnung zwischen
+Benutzer und Resource (z.B. Datenbank) wird an dieser 
+Stelle nicht konkretisiert.
+ 
+Die Methode isAllowed muss vor jeder Ausführung einer
+Funktion geprüft werden, damit sichergestellt werden
+kann, dass der Benutzer auch wirklich das Recht hat, 
+diese Funktion zu nutzen.
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>665</x>
+      <y>532</y>
+      <w>881</w>
+      <h>419</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>868;21;868;112;742;112;742;406;21;406</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>1246</x>
+      <y>567</y>
+      <w>217</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>Systemfunktion
+--
+id: int
+name: String
+--
+getResourceID(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1442</x>
+      <y>532</y>
+      <w>83</w>
+      <h>76</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>70;21;70;63;21;63</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>1610</x>
+      <y>427</y>
+      <w>69</w>
+      <h>293</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>21;21;56;280</additional_attributes>
+  </element>
+</diagram>

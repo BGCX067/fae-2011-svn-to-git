@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>5</zoom_level>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>225</x>
+      <y>145</y>
+      <w>105</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[]-(()-[]&gt;
+ 
+ 
+IBenachrichtigungsregel</panel_attributes>
+    <additional_attributes>55;15;55;95</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>220</x>
+      <y>130</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes> 
+'Benutzer</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>220</x>
+      <y>240</y>
+      <w>190</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes> 
+'Regel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>140</x>
+      <y>530</y>
+      <w>430</w>
+      <h>205</h>
+    </coordinates>
+    <panel_attributes> 
+'Energieverbraucher</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>265</x>
+      <y>295</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes> 
+'Benachrichtigungsregel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>265</x>
+      <y>225</y>
+      <w>90</w>
+      <h>79</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[].&gt;()-
+&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>15;15;55;35;55;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>265</x>
+      <y>335</y>
+      <w>120</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes> 
+'Ausfuehrungsregel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>160</x>
+      <y>680</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes> 
+'Energieverbrauchergruppe</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>275</x>
+      <y>665</y>
+      <w>144</w>
+      <h>52</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[]-())-[]&gt;
+ 
+ 
+IElektrEnergieverbraucher</panel_attributes>
+    <additional_attributes>135;25;15;25</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>410</x>
+      <y>680</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes> 
+'elektr.Energieverbraucher</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>270</x>
+      <y>425</y>
+      <w>96</w>
+      <h>114</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[]-())-[]&gt;
+ 
+ 
+IEnergieverbraucher</panel_attributes>
+    <additional_attributes>50;105;50;15</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>280</x>
+      <y>350</y>
+      <w>75</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[]&lt;.)-
+&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>40;15;40;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>305</x>
+      <y>515</y>
+      <w>165</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[].&gt;()-
+
+&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>15;15;130;45;130;165</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Component</type>
+    <coordinates>
+      <x>295</x>
+      <y>595</y>
+      <w>100</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes> 
+'Heizkoerper</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>210</x>
+      <y>515</y>
+      <w>119</w>
+      <h>174</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[].&gt;()-
+
+&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>110;15;40;45;40;165</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>280</x>
+      <y>515</y>
+      <w>75</w>
+      <h>89</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;[].&gt;()-
+&lt;&lt;delegate&gt;&gt;</panel_attributes>
+    <additional_attributes>40;15;40;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InteractionFrame</type>
+    <coordinates>
+      <x>85</x>
+      <y>80</y>
+      <w>540</w>
+      <h>695</h>
+    </coordinates>
+    <panel_attributes>Komponentendiagramm</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

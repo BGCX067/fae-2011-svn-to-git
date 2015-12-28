@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.ActivityDiagramText</type>
+    <coordinates>
+      <x>170</x>
+      <y>50</y>
+      <w>256</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>title:Geräteübersicht einsehen
+Start
+Ansicht zur \Geräteübersicht auswählen
+
+Angezeigte Geräte ansehen
+
+Ansicht schließen
+End
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

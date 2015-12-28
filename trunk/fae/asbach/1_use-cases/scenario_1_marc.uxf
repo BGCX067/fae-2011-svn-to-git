@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <type>com.umlet.element.Actor</type>
+    <coordinates>
+      <x>16</x>
+      <y>200</y>
+      <w>64</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>Herr Müller</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>280</x>
+      <y>96</y>
+      <w>176</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Stromverbrauch einzelner Geräte
+ ermitteln (Req-8 und Req-7-1)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>280</x>
+      <y>184</y>
+      <w>176</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>Geräte ausschalten bzw.
+zu bestimmten Zeiten
+ausschalten (Req-21)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>280</x>
+      <y>264</y>
+      <w>184</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes>Stromverbrauch der Geräte 
+untereinander vergleichen
+(Req-7-3)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>280</x>
+      <y>328</y>
+      <w>192</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Stromverbrauch des alten
+(ersetzten) Geräts mit dem des 
+neuen Geräts vergleichen
+ (Req-7-2)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>280</x>
+      <y>424</y>
+      <w>216</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Prüfen, ob ein Gerät verhältnismäßig
+viel verbraucht
+(im Vergleich zu ähnlichen Geräten)
+(Req-9)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>72</x>
+      <y>112</y>
+      <w>224</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>208;24;24;112</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>72</x>
+      <y>200</y>
+      <w>224</w>
+      <h>288</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>208;272;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>72</x>
+      <y>192</y>
+      <w>224</w>
+      <h>48</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>208;24;24;32</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>80</x>
+      <y>200</y>
+      <w>216</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>200;88;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>72</x>
+      <y>200</y>
+      <w>224</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>208;168;24;24</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>144</x>
+      <y>48</y>
+      <w>416</w>
+      <h>520</h>
+    </coordinates>
+    <panel_attributes>topcenter:System
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

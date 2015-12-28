@@ -1,0 +1,700 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.Actor</type>
+    <coordinates>
+      <x>110</x>
+      <y>290</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>(A)/(B)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>330</x>
+      <y>110</y>
+      <w>220</w>
+      <h>890</h>
+    </coordinates>
+    <panel_attributes>System</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>380</x>
+      <y>140</y>
+      <w>120</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>An-/
+Abmelden
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>130</y>
+      <w>240</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;190;220;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>100</y>
+      <w>330</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Jeder (B) soll die Möglichkeit haben, sich am
+System an-/abzumelden.(ID1)(ID24)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>460</x>
+      <y>100</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;50;130;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>370</x>
+      <y>590</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>elektr. (EV)/Heizkoeper
+manuell registrieren
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>570</y>
+      <w>170</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Der (A) kann einen 
+elektr. (EV)/
+Heizkoerper manuell 
+registrieren.(ID3)(ID12)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>370</x>
+      <y>680</y>
+      <w>150</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>elektr. (EVG)
+editieren/einteilen
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>670</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>elektr. (EVG) werden vom (A) 
+erstellt und dienen der 
+individuellen Einteilung von 
+(EV).(ID5)(ID6)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>40</x>
+      <y>40</y>
+      <w>280</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Administrator == (A)
+Benutzer == (B)
+Energieverbraucher == (EV)
+Energieverbrauchergruppen == (EVG)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>340</x>
+      <y>190</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Den Energieverbrauch von
+elektr. (EV) oder elektr. (EVG)
+untereinander vergleichen
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>160</y>
+      <w>380</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Den Energieverbrauch von elektr. (EV) oder elektr.
+(EVG) untereinander über gewählte Zeiträume
+hinweg vergleichen(B)(ID7)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>510</x>
+      <y>180</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;60;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>220</y>
+      <w>200</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;100;180;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>830</x>
+      <y>670</y>
+      <w>140</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>ID5 und ID6 sind 
+zusammengefasst
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>780</x>
+      <y>660</y>
+      <w>70</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;40;50;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>340</x>
+      <y>280</y>
+      <w>200</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>aktuellen Verbrauch aller
+elektr. (EV) anzeigen
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>270</y>
+      <w>200</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;50;180;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>510</x>
+      <y>240</y>
+      <w>100</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;60;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>230</y>
+      <w>290</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Der aktuelle Verbrauch der elektr.
+(EV) ist anzuzeigen und mit einem
+zu speziﬁzierenden vorangegangenen
+Zeitraum zu vergleichen.(B)(ID9)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>790</x>
+      <y>580</y>
+      <w>170</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>ID3 und ID12 sind 
+zusammengefasst
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>730</x>
+      <y>570</y>
+      <w>80</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;60;40</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>380</x>
+      <y>350</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Heizkörper/elektr.
+(EV) steuern</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>290</y>
+      <w>240</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;220;80</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>320</y>
+      <w>260</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Mit dieser Funktion soll dem (B)
+(A) die Möglichkeit gegeben werden,
+die Heizkörper/elektr. (EV) zu 
+steuern.(ID14)(ID17)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>490</x>
+      <y>330</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;40;100;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>360</x>
+      <y>760</y>
+      <w>180</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Benachrichtigungsregel
+editieren</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>750</y>
+      <w>380</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>In einer Benachrichtigungsregel sollen Bedingungen
+festgelegt werden können, bei welchen Ereignissen
+im System der (B) benachrichtigt werden soll.(ID16)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>510</x>
+      <y>740</y>
+      <w>100</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;50;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>910</x>
+      <y>320</y>
+      <w>160</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>ID14 und ID17 sind 
+zusammengefasst
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>820</x>
+      <y>320</y>
+      <w>110</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;40;90;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>370</x>
+      <y>820</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>Ausführungsregel
+deﬁnieren</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>820</y>
+      <w>410</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>In einer Ausführungsregel sollen Bedingungen fest-
+gelegt werden können, zu denen bestimmte Aktionen
+an ausgewählten (EV) automatisiert ausgeführt 
+werden sollen.(ID19)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Actor</type>
+    <coordinates>
+      <x>120</x>
+      <y>790</y>
+      <w>100</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>(A)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>800</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;200;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>760</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;70;190;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>490</x>
+      <y>810</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;100;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>370</x>
+      <y>880</y>
+      <w>150</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>Taridaten editieren</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>900</y>
+      <w>380</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Dem (A) soll die Möglichkeit gegeben werden,
+die Kosten seines Stromtarifes einzugeben. 
+Dies dient als Grundlage zur Berechnung der
+Verbrauchskosten.(ID20)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>800</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;200;90</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>870</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;110;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>380</x>
+      <y>400</y>
+      <w>130</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>(B) verwalten</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>400</y>
+      <w>410</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Mit dieser Funktion soll der (A) neue (B) anlegen,
+editieren und wieder löschen können. Hier wird 
+zwischen zwei Nutzergruppen unterschieden: dem 
+Stammnutzer und dem eingeschränkten Nutzer. Der 
+eingeschränkte Nutzer hat zu Beginn keine Rechte 
+an Funktionen oder jeglichen (EV). Diese müssen 
+vom (A) freigschaltet werden..(ID22)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>480</x>
+      <y>380</y>
+      <w>130</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;110;50</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>160</x>
+      <y>290</y>
+      <w>240</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;220;120</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>500</x>
+      <y>570</y>
+      <w>110</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;60;90;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>490</x>
+      <y>680</y>
+      <w>120</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;40;100;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>690</y>
+      <w>220</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;140;200;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>610</y>
+      <w>220</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;220;200;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.UseCase</type>
+    <coordinates>
+      <x>370</x>
+      <y>930</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>Rechte vergeben
+/entziehen</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>170</x>
+      <y>800</y>
+      <w>230</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;210;140</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>590</x>
+      <y>980</y>
+      <w>330</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Der (A) soll dem eingeschränkten Nutzer
+Rechte an bestimmte Funktionen oder (EV)
+erteilen und entziehen können(ID23)
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>490</x>
+      <y>920</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;30;100;70</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>970</x>
+      <y>100</y>
+      <w>150</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>ID1 und ID24 sind 
+zusammengefasst
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>890</x>
+      <y>90</y>
+      <w>100</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>30;40;80;30</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InteractionFrame</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1130</w>
+      <h>1050</h>
+    </coordinates>
+    <panel_attributes>Use Case Diagramm</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

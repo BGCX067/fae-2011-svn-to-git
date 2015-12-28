@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.custom.InteractionFrame</type>
+    <coordinates>
+      <x>162</x>
+      <y>45</y>
+      <w>738</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>AD: 12 - Heizkörper manuell registrieren</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InitialState</type>
+    <coordinates>
+      <x>198</x>
+      <y>162</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>189</x>
+      <y>144</y>
+      <w>116</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>99;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>612</x>
+      <y>144</y>
+      <w>162</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>Daten des 
+Heizkörpers
+speichern</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.FinalState</type>
+    <coordinates>
+      <x>855</x>
+      <y>162</y>
+      <w>18</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>i</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.State</type>
+    <coordinates>
+      <x>288</x>
+      <y>153</y>
+      <w>162</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>Daten des
+Heizkörpers eingeben</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>423</x>
+      <y>144</y>
+      <w>206</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>189;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>747</x>
+      <y>144</y>
+      <w>125</w>
+      <h>44</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>108;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>468</x>
+      <y>45</y>
+      <w>189</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Zu den Daten gehören:
+Standort, Heizstufe
+bg=yellow
+fg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>162</x>
+      <y>108</y>
+      <w>369</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>topcenter:Nutzer
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.Systemborder</type>
+    <coordinates>
+      <x>531</x>
+      <y>108</y>
+      <w>369</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>topcenter:System
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

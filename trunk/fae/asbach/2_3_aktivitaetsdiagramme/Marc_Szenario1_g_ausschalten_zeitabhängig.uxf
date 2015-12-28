@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <help_text>title:Gesamtsitzung
+Start
+Anmelden
+If 
+	[beenden]
+
+	While[Aktion ausführen]
+		Aktion..
+	[beenden]
+EndIf
+Abmelden
+End
+</help_text>
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.ActivityDiagramText</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>932</w>
+      <h>804</h>
+    </coordinates>
+    <panel_attributes>title:Geraete ausschalten
+Start
+If
+	[Prüfungszeit erreicht]
+	Kontrollrundgang für zu prüfende Geräte beginnen
+	While[zu prüfende Geräte vorhanden]
+		
+		zu prüfendes Gerät auswählen
+		If
+			[Geraet eingeschaltet]
+			Gerät ausschalten
+			
+			[Geraet ausgeschaltet]
+			
+		EndIf
+
+		
+		
+	[alle Geräte geprüft]
+	Kontrollrundgang beenden
+	
+	[Prüfungszeit nicht erreicht]
+	
+	
+EndIf
+End</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

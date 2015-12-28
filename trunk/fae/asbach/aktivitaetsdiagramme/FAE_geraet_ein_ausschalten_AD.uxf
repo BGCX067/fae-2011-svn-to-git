@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.ActivityDiagramText</type>
+    <coordinates>
+      <x>140</x>
+      <y>0</y>
+      <w>470</w>
+      <h>370</h>
+    </coordinates>
+    <panel_attributes>title:Gerät ein/ausschalten
+Start
+Gerät auswählen
+If
+	[Gerät eingeschaltet]
+	Gerät auschalten
+	
+
+	[Gerät eingeschaltet]
+	Gerät einchalten
+EndIf
+
+End
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>30</x>
+      <y>510</y>
+      <w>250</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Sollen die Bestätigungs
+angezeigt werden?? und 
+die Wartezeiten für 
+Umschalten
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

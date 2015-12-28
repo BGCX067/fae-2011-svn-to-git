@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.ActivityDiagramText</type>
+    <coordinates>
+      <x>0</x>
+      <y>63</y>
+      <w>2358</w>
+      <h>345</h>
+    </coordinates>
+    <panel_attributes>title:Aktion
+Start
+Aktion wählen	
+If		
+	[Heinzungssteuerung]
+	Korrigieren der Raumtemperatur (Alex)..
+
+	[Leichtsteuerung]
+	Licht ein-/ausschalten/dimmen..
+
+	[Gerätesteuerung]
+	Gerät ein-/ausschalten..
+
+	[Stromverbauch eines Geräts ansehen]
+	Stromverbrauch eines Geräts einsehen..
+
+	[Gesamtstromverbrauch einsehen]
+	Gesamtstromverbrauch einsehen..
+
+	[Stromverbrauch vergleichen]
+	Stromverbrauch mehrerer Geräte vergleichen..
+		
+	[Gerät einer Gruppe hinzufügen]
+	Gerät einer Gerätegruppe hinzufügen..
+		
+	[Geräteübersicht]
+	Geräteübersicht einsehen..
+
+	[Sicht anpassen]
+	Gestalten einer individuellen Sicht..
+
+EndIf
+End
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>1881</x>
+      <y>666</y>
+      <w>126</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Bedingungen einheitlich formulieren
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

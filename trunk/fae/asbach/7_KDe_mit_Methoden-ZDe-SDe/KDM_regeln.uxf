@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>9</zoom_level>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>873</x>
+      <y>279</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>RegelException
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>684</x>
+      <y>252</y>
+      <w>206</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..1
+throws&gt;</panel_attributes>
+    <additional_attributes>27;45;189;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>468</x>
+      <y>765</y>
+      <w>197</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>belongs to
+lt=&lt;&lt;&lt;-
+m1=0..1
+m2=0..n</panel_attributes>
+    <additional_attributes>180;45;27;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>180</x>
+      <y>333</y>
+      <w>242</w>
+      <h>512</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+&lt;hat</panel_attributes>
+    <additional_attributes>81;495;45;495;45;27;225;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>234</x>
+      <y>225</y>
+      <w>188</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1..n
+&lt;ist kontrolliert von</panel_attributes>
+    <additional_attributes>171;45;27;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>684</x>
+      <y>189</y>
+      <w>206</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=1
+führt aus&gt;</panel_attributes>
+    <additional_attributes>27;45;189;45</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>648</x>
+      <y>765</y>
+      <w>216</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Gerätegruppe
+--
+-geräte: List&lt;Gerät&gt;
+--
++gerätHinzufügen(d: Gerät): void
++gerätEntfernen(d: Gerät): void
++alleGeräteZurückliefern(): List&lt;Gerät&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Note</type>
+    <coordinates>
+      <x>432</x>
+      <y>54</y>
+      <w>225</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Getter/Setter für "name" wurden
+aus Übersichtlichkeitsgründen
+weggelassen
+bg=yellow
+fg=black
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>261</x>
+      <y>765</y>
+      <w>234</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Gerät
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>684</x>
+      <y>333</y>
+      <w>289</w>
+      <h>503</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..n
+&lt;has assigned</panel_attributes>
+    <additional_attributes>180;486;225;486;225;27;27;27</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>405</x>
+      <y>198</y>
+      <w>306</w>
+      <h>261</h>
+    </coordinates>
+    <panel_attributes>Regel
+--
+-zeitpunkt: List&lt;Zeitpunkt&gt;
+-aktion: Aktion
+-name: String
+-aktiv: boolean
+--
++zeitpunktHinzufügen(t: Zeitpunkt): void
++zeitpunktEditieren(t: Zeitpunkt): Zeitpunkt
++zeitpunktEntfernen(t: Zeitpunkt): Zeitpunkt
++aktionHinzufügen(a: Zeitpunkt): void
++aktionEditieren(a: Zeitpunkt): Action
++aktionEntfernen(a: Zeitpunkt): void
++aktionZurückliefern(): List&lt;Zeitpunkt&gt;
++zeitpunkteZurückliefern(): List&lt;Zeitpunkt&gt;
++regelAktivieren(): void
++regelDeaktivieren(): void 
++istAktiv(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>873</x>
+      <y>198</y>
+      <w>135</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>Aktion
+--
+-name: String
+--
++ausführen(): void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>9</x>
+      <y>216</y>
+      <w>252</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Zeitpunkt
+--
+-timestamp: long
+-wiederholbar: boolean
+--
++zeitpunktSetzen(t: long): void
++zeitpunktZurückliefern(): long
++setzeWiederholbar(c: boolean): void
++istWiederholbar(): boolean
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Class</type>
+    <coordinates>
+      <x>414</x>
+      <y>486</y>
+      <w>279</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>/AbstrahiertesKontrolliertesGerät/
+--
+-regeln: List&lt;Regel&gt;
+-name: String
+--
+/+regelHinzufügen(r: Regel): void/
+/+regelEditieren(r: Regel): Regel/
+/+regelEntfernen(r: Regel): void/
+/+alleRegelnZurückliefern(): List&lt;Regel&gt;/
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>369</x>
+      <y>585</y>
+      <w>206</w>
+      <h>197</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>189;27;189;108;27;108;27;180</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.Relation</type>
+    <coordinates>
+      <x>531</x>
+      <y>585</y>
+      <w>224</w>
+      <h>197</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>27;27;27;108;207;108;207;180</additional_attributes>
+  </element>
+  <element>
+    <type>com.umlet.element.custom.InteractionFrame</type>
+    <coordinates>
+      <x>0</x>
+      <y>0</y>
+      <w>1035</w>
+      <h>891</h>
+    </coordinates>
+    <panel_attributes>Klassendiagramm mit Methoden</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="11.3">
+  <zoom_level>10</zoom_level>
+  <element>
+    <type>com.umlet.element.ActivityDiagramText</type>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>368</w>
+      <h>443</h>
+    </coordinates>
+    <panel_attributes>
+title:Stromverbrauch mehrerer Geräte vergleichen
+Start
+	If
+		[Einzel Gerätevergleich]
+		While[Gerät hinzufügen]
+			Gerät auswählen
+		[weiter mit vergleich]
+		
+		[Gerätegruppenvergleich]
+		While[Gerätegruppe hinzufügen]
+			Gerätegruppe auswählen
+		[weiter mit vergleich]
+	EndIf
+	Zeitraum wählen
+	Vergleichen
+End
+
+//Start
+//Anmeldung
+//If 
+//	[beenden]
+
+//	While[Aktion ausführen]
+//		Aktion..
+//	[beenden]
+//EndIf
+//Abmeldung
+//End
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
